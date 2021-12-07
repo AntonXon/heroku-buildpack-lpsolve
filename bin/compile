@@ -8,7 +8,7 @@ build=$(cd "$1/" && pwd)
 cd $1
 curl 'http://bashdb.sourceforge.net/lpsolve-5.5.0.10i.tar.bz2' -O
 mkdir -p vendor/lpsolve
-tar xjf - -C vendor/lpsolve
+tar -C vendor/lpsolve -xjf lpsolve-5.5.0.10i.tar.bz2
 #gzip -dc lp_solve_5.5.0.13_exe.tar.gz | tar -C vendor/lpsolve -xf -
 #tar -C vendor/lpsolve -xvf lp_solve_5.5.0.13_exe.tar.gz
 
