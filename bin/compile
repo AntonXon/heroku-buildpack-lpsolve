@@ -14,5 +14,3 @@ tar -C vendor/lpsolve -xjf lpsolve-5.5.0.10i.tar.bz2
 
 mkdir -p $build/.profile.d
 echo 'PATH=$PATH:/app/vendor/lpsolve' > $build/.profile.d/lp_solve.sh
-[InternetShortcut]
-URL=https://github.com/AntonXon/heroku-buildpack-lpsolve/blob/master/bin/compile
