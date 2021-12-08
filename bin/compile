@@ -12,4 +12,6 @@ gzip -dc lp_solve_5.5.2.5_exe_ux64.tar.gz | tar -C vendor/lpsolve -xf -
 #tar -C vendor/lpsolve -xvf lp_solve_5.5.0.13_exe.tar.gz
 
 mkdir -p $build/.profile.d
-echo 'LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/app/vendor/lpsolve' > $build/.profile.d/lp_solve.sh
+cat <<EOF >$build/.profile.d/lp_solve.sh
+export LD_LIBRARY_PATH="\$LD_LIBRARY_PATH:/app/vendor/lpsolve"
+EOF
