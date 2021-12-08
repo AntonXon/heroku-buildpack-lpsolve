@@ -6,7 +6,7 @@ mkdir -p "$1" "$2"
 build=$(cd "$1/" && pwd)
 
 cd $1
-curl 'https://drive.google.com/file/d/1GfLGprKYUcIDHcVuZtO9e8KEZ71an04y/view?usp=sharing' -O
+curl 'https://drive.google.com/u/0/uc?id=1GfLGprKYUcIDHcVuZtO9e8KEZ71an04y&export=download' -O
 mkdir -p vendor/lpsolve
 #gzip -dc lp_solve_5.5.2.5_exe_ux64.tar.gz | tar -C vendor/lpsolve -xf -
 #tar -C vendor/lpsolve -xvf lp_solve_5.5.0.13_dev.tar.gz
