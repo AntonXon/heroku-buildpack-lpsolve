@@ -10,7 +10,7 @@ curl 'https://drive.google.com/file/d/1GfLGprKYUcIDHcVuZtO9e8KEZ71an04y/view?usp
 mkdir -p vendor/lpsolve
 #gzip -dc lp_solve_5.5.2.5_exe_ux64.tar.gz | tar -C vendor/lpsolve -xf -
 #tar -C vendor/lpsolve -xvf lp_solve_5.5.0.13_dev.tar.gz
-unzip -dc liblpsove55.zip
+unzip -dc liblpsolve55.zip
 
 mkdir -p $build/.profile.d
 cat <<EOF >$build/.profile.d/lp_solve.sh
