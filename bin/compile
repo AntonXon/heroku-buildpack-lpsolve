@@ -6,9 +6,12 @@ mkdir -p "$1" "$2"
 build=$(cd "$1/" && pwd)
 
 cd $1
-curl 'https://drive.google.com/u/0/uc?id=1GfVsyuqknClHLVcj3nPKmQcXkmQeu-i5&export=download' --output lib.tar
+
 mkdir -p vendor/lpsolve
-tar -C vendor/lpsolve -xvf lib.tar
+curl 'https://drive.google.com/u/0/uc?id=1GcrpZLXTO6DL_A-w26l90D0fATI5_KZc&export=download' --output vendor/lpsolve/liblpsolve55j.so
+
+curl 'https://drive.google.com/u/0/uc?id=1Gf0pGpBJtvhQYn9E6t25az_YYJzLR_xa&export=download' --output vendor/lpsolve/liblpsolve55.so
+
 
 mkdir -p $build/.profile.d
 cat <<EOF >$build/.profile.d/lp_solve.sh
