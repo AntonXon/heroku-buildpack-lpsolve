@@ -15,7 +15,7 @@ curl 'https://drive.google.com/u/0/uc?id=1Gf0pGpBJtvhQYn9E6t25az_YYJzLR_xa&expor
 
 mkdir -p $build/.profile.d
 
-echo 'export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$build/vendor/lpsolve"' >> $build/.profile.d/lp_solve.sh
+echo 'export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:vendor/lpsolve"' >> $build/.profile.d/lp_solve.sh
 
 echo $LD_LIBRARY_PATH
 
