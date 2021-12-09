@@ -17,5 +17,3 @@ mkdir -p $build/.profile.d
 
 echo 'export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:vendor/lpsolve"' >> $build/.profile.d/lp_solve.sh
 
-echo $LD_LIBRARY_PATH
-
