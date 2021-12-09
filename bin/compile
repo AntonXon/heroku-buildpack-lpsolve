@@ -16,4 +16,4 @@ curl 'https://drive.google.com/u/0/uc?id=1Gp4XFvUsUBeGx8CabILdC7OLVIhPhnrC&expor
 mkdir -p $build/.profile.d
 
 #echo 'export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:vendor/lpsolve"' >> $build/.profile.d/lp_solve.sh
-echo 'export JAVA_OPTS="-Djava.library.path=/app/verndor/lpsolve"' >> $build/.profile.d/lp_solve.sh
+echo 'export JAVA_OPTS="-Djava.library.path=/app/vendor/lpsolve"' >> $build/.profile.d/lp_solve.sh
